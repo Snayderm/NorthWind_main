@@ -1,16 +1,2 @@
-﻿﻿HostApplicationBuilder Builder = Host.CreateApplicationBuilder();
-
-Builder.Services.AddNorthWindServices();
-
-using IHost AppHost = Builder.Build();
-
-
-IProductService Service = AppHost.Services.GetRequiredService<IProductService>();
-Service.Add("Demo", "Azúcar Refinada"); 
-
-/*     IMPLEMENTACIONES DE TRES PRINCIPIOS IMPORTANTES
- * AppLogger y los Writers: Responsabilidad Única
- * AppLogger: Abierto pero Cerrado
- * AppLogger: Inversión de dependencias. Los módulos de alto nivel
- * son independientes de los detalles de implementación
- * */
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
