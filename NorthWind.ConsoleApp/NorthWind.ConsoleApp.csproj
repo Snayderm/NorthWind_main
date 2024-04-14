@@ -8,7 +8,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\NorthWind.Entities\NorthWind.Entities.csproj" />
+		<ProjectReference 
+			Include="..\NorthWind.Entities\NorthWind.Entities.csproj" />
+		<ProjectReference Include="..\NorthWind.Writers\NorthWind.Writers.csproj" />
 	</ItemGroup>
 
 </Project>
