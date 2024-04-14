@@ -1,9 +1,9 @@
-﻿using NorthWind.Entities.ValueObjects;
-
-namespace NorthWind.Entities.Interfaces
+﻿namespace NorthWind.Entities.ValueObjects
 {
-	public interface IUserActionWriter
-	{
-		void Write(UserAction action);
-	}
+	public class UserAction(string user, string description)
+    {
+        public DateTime CreatedDateTime { get; } = DateTime.Now;
+	public string User => user;
+	public string Description => description;
+}
 }
